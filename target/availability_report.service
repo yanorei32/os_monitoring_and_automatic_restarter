@@ -1,0 +1,8 @@
+[Unit]
+Description=Availability Report
+
+[Service]
+ExecStart=/usr/local/sbin/availability_report
+
+[Install]
+WantedBy=default.target

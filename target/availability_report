@@ -1,0 +1,5 @@
+#!/bin/bash
+while : ; do
+    [ -c /dev/ttyACM0 ] && stty -F /dev/ttyACM0 -hupcl && echo -n 'A' > /dev/ttyACM0
+    sleep 1
+done
